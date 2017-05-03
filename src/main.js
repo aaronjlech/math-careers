@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-// import { Main_Router } from './router.js';
+import { Provider } from 'react-redux';
+import store from './redux/store'
+import App from './containers/App';
 
 
-export default class App extends Component{
+const Root = (
+   <Provider store={store}>
+      <App/>
+   </Provider>
+)
 
-   render(){
-      return(
-         <div className="HEyy">
-            <h1>Heyy</h1>
-         </div>
-      )
-   }
-}
-
-ReactDOM.render(<App/>, document.querySelector("#app-container"));
+ReactDOM.render(Root, document.querySelector("#root"));
