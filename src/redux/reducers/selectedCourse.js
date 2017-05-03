@@ -1,9 +1,9 @@
 import { data } from '../../data';
 
-
+console.error("NOOO")
 
 export const selectedCourse = (state = data.courses, action) => {
-   console.log(state)
+   console.log("asdfasdf")
    switch (action.type) {
       case "UPDATE_SELECTED":
       let currentCourse = data.courses.filter(course =>{
