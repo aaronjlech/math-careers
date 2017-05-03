@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
 // import { courses, careers } from '../data';
 
+const DropdownMenu = ({courses}) =>{
 
+   return(
+      <ul>
+         {courses.map(course =>{
+            return (
+               <li>{}</li>
+            )
+         })}
+      </ul>
+   )
+
+}
 
 export default class CourseSelector extends Component{
 
@@ -9,6 +21,7 @@ export default class CourseSelector extends Component{
    onChange = (e)=>{
       e.preventDefault();
       const { value } = this.refs.courseSelector
+
       const { updateSelected } = this.props;
       updateSelected(value);
    }
@@ -17,6 +30,7 @@ export default class CourseSelector extends Component{
       const { courses } = this.props;
       return(
          <label htmlFor="course-selector">
+            Pick Your Highest Level of Math!
             <select
                onChange={this.onChange}
                ref="courseSelector"

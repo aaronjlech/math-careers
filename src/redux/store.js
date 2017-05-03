@@ -1,11 +1,12 @@
 import { createStore, compose } from "redux";
-import { careers, courses } from '../data';
+import { data } from '../data';
 import rootReducer from './reducers/index';
 
 const defaultState = {
-   courses,
-   careers,
-   selectedCourse: "ALL"
+   courses: data.courses,
+   careers: data.careers,
+   selectedCourse: data.courses,
+   selectedCareers: data.careers
 };
 console.log(defaultState)
 const store = createStore( rootReducer, defaultState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

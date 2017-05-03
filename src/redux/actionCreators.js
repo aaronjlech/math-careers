@@ -1,6 +1,6 @@
-export const updateSelected = (course) => {
+export const updateSelected = (courseId) => {
    return{
       type: "UPDATE_SELECTED",
-      courseId: course
+      courseId
    }
 };

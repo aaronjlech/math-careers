@@ -9,7 +9,8 @@ function mapStateToProps(state){
    return{
       careers: state.careers,
       courses: state.courses,
-      selectedCourse: state.selectedCourse
+      selectedCourse: state.selectedCourse,
+      selectedCareers: state.selectedCareers
    }
 }
 
