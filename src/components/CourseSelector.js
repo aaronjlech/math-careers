@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
 // import { courses, careers } from '../data';
 
-const DropdownMenu = ({courses}) =>{
 
-   return(
-      <ul>
-         {courses.map(course =>{
-            return (
-               <li>{}</li>
-            )
-         })}
-      </ul>
-   )
-
-}
 class DropdownMenu extends Component{
 
 
    render(){
+       const { courses } = this.props;
       return(
-         
+          <ul className="menu">
+            {courses.map(course => {
+                <li onClick={this._handleClick} key={course.id}>{course.name}</li>
+            })}
+          </ul>
+
       )
    }
 }
