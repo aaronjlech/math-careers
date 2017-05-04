@@ -163,7 +163,7 @@ export const data = {
       },
       {
          id: "cp3",
-         name: "Business and Some Health Science Careers",
+         name: "Non STEM Education Careers",
          description: "",
          type: 'career',
          coursePaths: [ "cc0", "cc1", "cc7", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
