@@ -13,12 +13,12 @@ export default class CourseCard extends Component {
 
 
   render() {
-    const { name, description, type } = this.props;
+    const { course, updateSelected } = this.props;
     return (
-            <div className="courses_card col-sm-3">
-                <h3>{name}</h3>
-                <p>{description}</p>
-                <p>{type}</p>
+            <div className={`"courses_card col-sm-3 "${course.type}`} onClick={()=> updateSelected(course.id)}>
+                <h3>{course.name}</h3>
+                <p>{course.description}</p>
+                <p>{course.type}</p>
             </div>
         );
   }

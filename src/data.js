@@ -3,7 +3,7 @@ export const data = {
       {
          id: "hsc0",
          name: "Foundations in Algebra",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'highschool',
          preReqs: [],
          preReqFor: [ "cc0", "cc1", "cc2", "cc3", "cc4", "cc5", "cc6", "cc7", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
@@ -13,7 +13,7 @@ export const data = {
          id: "hsc1",
          type: 'highschool',
          name: "Intermediate Algebra",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          preReqs: ["hsc0"],
          preReqFor: [ "cc0", "cc1", "cc2", "cc3", "cc4", "cc5", "cc6", "cc7","hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
          careers: "ALL"
@@ -21,7 +21,7 @@ export const data = {
       {
          id: "hsc2",
          name: "Algebra I",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'highschool',
          preReqs: [],
          preReqFor: [ "cc0", "cc1", "cc2", "cc3", "cc4", "cc5", "cc6", "cc7", "hsc3", "hsc4", "hsc5", "hsc6" ],
@@ -30,7 +30,7 @@ export const data = {
       {
          id: "hsc3",
          name:  "Geometry",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'highschool',
          preReqs: [ "hsc2", "hsc1" ],
          careers: "ALL"
@@ -38,7 +38,7 @@ export const data = {
       {
          id: "hsc4",
          name: "Algebra II",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'highschool',
          preReqs: ["hsc3"],
          careers: "ALL"
@@ -47,7 +47,7 @@ export const data = {
       {
          id: "hsc5",
          name: "Precalculus or Algebra III",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'highschool',
          preReqs: ["hsc4"],
          careers: ["cp0", "cp1", "cp2", "cp3"]
@@ -56,7 +56,7 @@ export const data = {
       {
          id: "hsc6",
          name: "Statistics or Other Non-Algebra Math Courses",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'highschool',
          preReqs: ["hsc4"],
          careers: ["cp1", "cp2", "cp3", "cp4", "cp5"]
@@ -66,7 +66,7 @@ export const data = {
       {
          id: "cc0",
          name: "Precalculus",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'college',
          preReqs: ["hsc5", "cc1"],
          careers: ["cp1", "cp2", "cp3"]
@@ -75,7 +75,7 @@ export const data = {
       {
          id: "cc1",
          name: "College Algebra",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'college',
          preReqs: ["hsc4", "hsc6", "cc0"],
          careers: ["cp1", "cp2", "cp3"]
@@ -84,7 +84,7 @@ export const data = {
       {
          id: "cc2",
          name: "1st Year College Math Non-Algebra Course (e.g. Statistics)",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'college',
          preReqs: ["hsc6"],
          careers: ["cp4"]
@@ -92,7 +92,7 @@ export const data = {
       {
          id: "cc3",
          name: "Calculus I",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'college',
          preReqs: ["hsc5", "cc0"],
          careers: ["cp1"]
@@ -100,7 +100,7 @@ export const data = {
       {
          id: "cc4",
          name: "Business Calculus",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'college',
          preReqs: ["hsc5", "cc1"],
          careers: ["cp2"]
@@ -109,7 +109,7 @@ export const data = {
       {
          id: "cc5",
          name: "Additional Advanced STEM Courses",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'college',
          preReqs: ["cc3"],
          careers: ["cp3"]
@@ -117,7 +117,7 @@ export const data = {
       {
          id: "cc6",
          name: "Additional Calculus or Statistics Courses",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'college',
          preReqs: ["cc4"],
          careers: ["cp2"]
@@ -126,7 +126,7 @@ export const data = {
       {
          id: "cc7",
          name: "Additional Math Courses",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'college',
          preReqs: ["cc1", "cc2"],
          careers: ["cp3", "cp4"]
@@ -137,7 +137,7 @@ export const data = {
       {
          id: "cp0",
          name: "Non College Stem Careers",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'career',
          ///coursePaths references all courses that will path to this givin Career.
          coursePaths: ["hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5"],
@@ -147,7 +147,7 @@ export const data = {
       {
          id: "cp1",
          name: "STEM Careers (Science Technology, Engineering, Mathematics, & STEM Education)",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'career',
          coursePaths: [ "cc0", "cc1", "cc3", "cc5", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5" ],
          preReq: "cc5"
@@ -155,7 +155,7 @@ export const data = {
       {
          id: "cp2",
          name: "Business and Some Health Science Careers",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'career',
          coursePaths: [ "cc0", "cc1", "cc4", "cc6", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
          preReq: "cc6"
@@ -164,7 +164,7 @@ export const data = {
       {
          id: "cp3",
          name: "Non STEM Education Careers",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'career',
          coursePaths: [ "cc0", "cc1", "cc7", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
          preReq: "cc7"
@@ -173,7 +173,7 @@ export const data = {
       {
          id: "cp4",
          name: "Humanities & Arts Careers",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'career',
          coursePaths: [ "cc2", "cc7", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc6" ],
          preReq: "cc7"
@@ -181,7 +181,7 @@ export const data = {
       {
          id: "cp5",
          name: "Non-College Non-Stem Careers",
-         description: "",
+         description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
          type: 'career',
          coursePaths: [ "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc6" ],
          preReq: "hsc6"
@@ -205,7 +205,7 @@ export const data = {
 //    {
 //       id: "cp0",
 //       name: "Non College Stem Careers",
-//       description: "",
+//       description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
 //       type: 'career',
 //       ///coursePaths references all courses that will path to this givin Career.
 //       coursePaths: ["hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5"],
@@ -215,7 +215,7 @@ export const data = {
 //    {
 //       id: "cp1",
 //       name: "STEM Careers (Science Technology, Engineering, Mathematics, & STEM Education)",
-//       description: "",
+//       description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
 //       type: 'career',
 //       coursePaths: [ "cc0", "cc1", "cc3", "cc5", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5" ],
 //       preReq: "cc5"
@@ -223,7 +223,7 @@ export const data = {
 //    {
 //       id: "cp2",
 //       name: "Business and Some Health Science Careers",
-//       description: "",
+//       description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
 //       type: 'career',
 //       coursePaths: [ "cc0", "cc1", "cc4", "cc6", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
 //       preReq: "cc6"
@@ -232,7 +232,7 @@ export const data = {
 //    {
 //       id: "cp3",
 //       name: "Business and Some Health Science Careers",
-//       description: "",
+//       description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
 //       type: 'career',
 //       coursePaths: [ "cc0", "cc1", "cc7", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
 //       preReq: "cc7"
@@ -241,7 +241,7 @@ export const data = {
 //    {
 //       id: "cp4",
 //       name: "Humanities & Arts Careers",
-//       description: "",
+//       description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
 //       type: 'career',
 //       coursePaths: [ "cc2", "cc7", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc6" ],
 //       preReq: "cc7"
@@ -249,7 +249,7 @@ export const data = {
 //    {
 //       id: "cp5",
 //       name: "Non-College Non-Stem Careers",
-//       description: "",
+//       description: "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi incidunt maiores eius a labore atque esse quod, accusantium pariatur. Recusandae laborum reprehenderit ad odit distinctio quia eaque quae maiores voluptates.",
 //       type: 'career',
 //       coursePaths: [ "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc6" ],
 //       preReq: "hsc6"
