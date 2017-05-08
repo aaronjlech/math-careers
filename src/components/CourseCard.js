@@ -25,9 +25,8 @@ export default class CourseCard extends Component {
     const requiredCourses = [];
     const finalCourse = courses.filter(course => course.id === preReq)[0];
     requiredCourses.push(finalCourse);
-    const finalCoursePreReq = courses.filter(course => finalCourse.preReqs.includes(course.id));
+    const finalcodeCoursePreReq = courses.filter(course => finalCourse.preReqs.includes(course.id));
   }
-
 
 
   render() {
@@ -39,6 +38,7 @@ export default class CourseCard extends Component {
                 onMouseEnter={this._toggleToolTip} 
                 onMouseLeave={this._toggleToolTip}>
               <div className={`courses_card ${course.type}`}>
+              <i className="icon-info-circled"></i>
                 <h3>{course.name}</h3>
                 {isHovered ? <ToolTip description={course.description}/>  : "" }
                 <p>{course.type}</p>
