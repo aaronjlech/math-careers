@@ -1,7 +1,24 @@
 import React, { Component } from 'react';
-
+import ToolTip from './ToolTip';
 
 export default class CourseCard extends Component {
+  
+  state = {
+    isHovered: false
+  }
+
+  _toggleToolTip = () =>{
+    const { isHovered } = this.state;
+    if(isHovered) {
+      console.log("heello")
+        this.setState({isHovered: false})
+
+    } else {
+        this.setState({isHovered: true})
+
+    }
+
+  }
 
   _getRequired = () => {
     const { courses, preReq } = this.props;
@@ -12,13 +29,22 @@ export default class CourseCard extends Component {
   }
 
 
+
   render() {
     const { course, updateSelected } = this.props;
+    const { isHovered } = this.state
+
     return (
-            <div className={`"courses_card col-sm-3 "${course.type}`} onClick={()=> updateSelected(course.id)}>
+            <div className="col-sm-3" 
+                onMouseEnter={this._toggleToolTip} 
+                onMouseLeave={this._toggleToolTip}>
+              <div className={`courses_card ${course.type}`}>
                 <h3>{course.name}</h3>
-                <p>{course.description}</p>
+                {isHovered ? <ToolTip description={course.description}/>  : "" }
                 <p>{course.type}</p>
+                <button className="btn btn-primary" onClick={()=> updateSelected(course.id)}>Select Course</button>
+              </div>
+
             </div>
         );
   }
