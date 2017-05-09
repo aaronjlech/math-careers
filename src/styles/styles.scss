@@ -1,6 +1,6 @@
 //    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500|Work+Sans:300,400,600" rel="stylesheet">
 @import "./_colors.scss";
-
+@import "./_sideMenu.scss";
 h1, h2, h3, h4, h5{
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
@@ -15,7 +15,9 @@ body{
 
     background-attachment: fixed;
 }
-
+#app-container{
+	position: relative;
+}
 .courses_card{
     background: $SecGreen;
     border-radius: 4px;

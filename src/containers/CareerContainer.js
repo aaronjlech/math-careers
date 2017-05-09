@@ -10,14 +10,14 @@ export default class CareerContainer extends Component{
 
     render(){
         const { selectedCareers, selectedCourse } = this.props;
-
+            console.log(selectedCourse)
         return(
 
             <div className="container">
             <div className="current-course text-center">
                 <label htmlFor="current_title">
-                    Selected Course:
-                    <h3 className="current_title">{selectedCourse.name}</h3>
+                   Selected Course:
+                    <h3 className="current_title">{selectedCourse[0].name}</h3>
 
                 </label>
             </div>

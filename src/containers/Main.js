@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CourseSelector from '../components/CourseSelector';
 import CourseContainer from './CourseContainer';
 import CareerContainer from './CareerContainer';
-
+import SideNav from './SideNav';
 
 export default class Main extends Component{
 
@@ -15,6 +15,7 @@ export default class Main extends Component{
 
       return(
          <div id="app-container">
+            <SideNav/>
             <h1>Select A Course!</h1>
             <CourseContainer {...this.props}/>
             <h1>Careers</h1>
