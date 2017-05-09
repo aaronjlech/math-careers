@@ -13,11 +13,11 @@ export default class CareerContainer extends Component{
             console.log(selectedCourse)
         return(
 
-            <div className="container">
+            <div className="container right_container">
             <div className="current-course text-center">
                 <label htmlFor="current_title">
                    Selected Course:
-                    <h3 className="current_title">{selectedCourse[0].name}</h3>
+                    <h3 className="current_title">{selectedCourse.name}</h3>
 
                 </label>
             </div>

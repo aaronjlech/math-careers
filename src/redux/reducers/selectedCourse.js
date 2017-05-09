@@ -11,7 +11,7 @@ export const selectedCourse = (state = data.courses, action) => {
             action.courseId === "ALL" || action.courseId  === course.id
          )
       })
-         return currentCourse
+         return currentCourse[0]
          break;
       default:
       console.log(state, 'helloo')

@@ -7,9 +7,6 @@ import CourseCard from '../components/CourseCard';
 
 export default class CourseContainer extends Component{
 
-
-
-
     render(){
       const { selectedCourse, courses, careers, selectedCareers, updateSelected } = this.props;
       const highSchools = courses.filter(course => course.type === "highschool");

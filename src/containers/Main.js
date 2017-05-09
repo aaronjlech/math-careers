@@ -3,7 +3,7 @@ import CourseSelector from '../components/CourseSelector';
 import CourseContainer from './CourseContainer';
 import CareerContainer from './CareerContainer';
 import SideNav from './SideNav';
-
+import LandingPage from '../components/LandingPage';
 export default class Main extends Component{
 
 
@@ -12,14 +12,13 @@ export default class Main extends Component{
       const { selectedCourse, courses, careers, selectedCareers } = this.props;
       const highSchools = courses.filter(course => course.type === "highschool");
       const colleges = courses.filter(course => course.type === "college");
-
+      const courseLength = selectedCourse.length > 1;
       return(
-         <div id="app-container">
-            <SideNav/>
-            <h1>Select A Course!</h1>
-            <CourseContainer {...this.props}/>
-            <h1>Careers</h1>
-            <CareerContainer {...this.props}/>
+         <div id="app-container container">
+                        <SideNav {...this.props}/>
+           {courseLength ? <LandingPage/> :  <CareerContainer {...this.props}/> }
+            
+
 
          </div>
       )
