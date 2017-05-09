@@ -4,17 +4,17 @@ import ToolTip from './ToolTip';
 export default class CourseCard extends Component {
   
   state = {
-    isHovered: false
+    isClicked: false
   }
 
   _toggleToolTip = () =>{
-    const { isHovered } = this.state;
-    if(isHovered) {
+    const { isClicked } = this.state;
+    if(isClicked) {
       console.log("heello")
-        this.setState({isHovered: false})
+        this.setState({isClicked: false})
 
     } else {
-        this.setState({isHovered: true})
+        this.setState({isClicked: true})
 
     }
 
@@ -31,18 +31,19 @@ export default class CourseCard extends Component {
 
   render() {
     const { course, updateSelected } = this.props;
-    const { isHovered } = this.state
+    const { isClicked } = this.state
 
     return (
-            <div className="col-sm-3" 
-                onMouseEnter={this._toggleToolTip} 
-                onMouseLeave={this._toggleToolTip}>
+            <div className="col-sm-4">
               <div className={`courses_card ${course.type}`}>
-              <i className="icon-info-circled"></i>
-                <h3>{course.name}</h3>
-                {isHovered ? <ToolTip description={course.description}/>  : "" }
-                <p>{course.type}</p>
-                <button className="btn btn-primary" onClick={()=> updateSelected(course.id)}>Select Course</button>
+                <h3>{course.name}
+                  <i className="icon-info-circled" 
+                        onMouseEnter={this._toggleToolTip}
+                        onMouseLeave={this._toggleToolTip}>
+                        {isClicked ? <ToolTip description={course.description}/>  : "" }
+                  </i>
+                </h3>
+                 <button className="btn btn-primary" onClick={()=> updateSelected(course.id)}>Select Course</button>
               </div>
 
             </div>

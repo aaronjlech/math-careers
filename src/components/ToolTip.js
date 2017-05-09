@@ -10,7 +10,7 @@ export default class ToolTip extends Component{
         console.log("hee")
         return(
             <div className="tool-tip">
-            asdfadf
+            <span>Course Description:</span>
                 <span>{this.props.description}</span>
             </div>
         )
