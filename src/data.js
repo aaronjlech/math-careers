@@ -71,12 +71,12 @@ export const data = {
          type: 'highschool',
          preReqs: ["hsc3"],
          careers: {
-             cp0: ["hsc4", "hsc5"],
-             cp1: ["hsc4", "hsc5", "cc3", "cc5"],
-             cp2: ["hsc4", "hsc5", "cc4", "cc6"],
-             cp3: ["hsc4", "cc1", "cc7"],
-             cp4: ["hsc4", "hsc6", "cc2", "cc7"],
-             cp5: ["hsc4", "hsc6"],
+             cp0: ["hsc5"],
+             cp1: ["hsc5", "cc3", "cc5"],
+             cp2: ["cc4", "cc6"],
+             cp3: ["cc1", "cc7"],
+             cp4: ["hsc6", "cc2", "cc7"],
+             cp5: ["hsc6"],
          }
       },
       {
@@ -85,8 +85,12 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'highschool',
          preReqs: ["hsc4"],
-         careers: ["cp0", "cp1", "cp2", "cp3"]
-
+         careers: {
+             cp0: [],
+             cp1: ["cc3", "cc5"],
+             cp2: ["cc4", "cc6"],
+             cp3: ["cc0", "cc1", "cc7"]
+         }
       },
       {
          id: "hsc6",
@@ -94,7 +98,12 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'highschool',
          preReqs: ["hsc4"],
-         careers: ["cp1", "cp2", "cp3", "cp4", "cp5"]
+         careers: {
+             cp0: [],
+             cp1: ["cc3", "cc5"],
+             cp2: ["cc4", "cc6"],
+             cp3: ["cc0", "cc1", "cc7"]
+         }
       },
       // END HIGHSCHOOL COURSES
       // BEGIN COLLEGE COURSES
@@ -104,7 +113,11 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'college',
          preReqs: ["hsc5", "cc1"],
-         careers: ["cp1", "cp2", "cp3"]
+         careers: {
+             cp1: ["cc3", "cc5"],
+             cp2: ["cc1", "cc4", "cc6"],
+             cp3: ["cc1", "cc7"]
+         }
 
       },
       {
@@ -113,7 +126,11 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'college',
          preReqs: ["hsc4", "hsc6", "cc0"],
-         careers: ["cp1", "cp2", "cp3"]
+         careers: {
+             cp1: ["cc0", "cc3", "cc5"],
+             cp2: ["cc4", "cc6"],
+             cp3: ["cc7"]
+         }
 
       },
       {
@@ -122,7 +139,9 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'college',
          preReqs: ["hsc6"],
-         careers: ["cp4"]
+         careers: {
+             cp4: ["cc7"]
+         }
       },
       {
          id: "cc3",
@@ -130,7 +149,9 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'college',
          preReqs: ["hsc5", "cc0"],
-         careers: ["cp1"]
+         careers: {
+             cp1: ["cc5"]
+         }
       },
       {
          id: "cc4",
@@ -138,7 +159,9 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'college',
          preReqs: ["hsc5", "cc1"],
-         careers: ["cp2"]
+         careers: {
+             cp2: ["cc6"]
+         }
 
       },
       {
@@ -147,7 +170,9 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'college',
          preReqs: ["cc3"],
-         careers: ["cp3"]
+         careers: {
+             cp1: []
+         }
       },
       {
          id: "cc6",
@@ -155,7 +180,9 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'college',
          preReqs: ["cc4"],
-         careers: ["cp2"]
+         careers: {
+             cp2: []
+         }
 
       },
       {
@@ -164,7 +191,10 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'college',
          preReqs: ["cc1", "cc2"],
-         careers: ["cp3", "cp4"]
+         careers: {
+             cp3: [],
+             cp4: []
+         }
 
       }
    ],
