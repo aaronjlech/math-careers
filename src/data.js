@@ -7,7 +7,14 @@ export const data = {
          type: 'highschool',
          preReqs: [],
          preReqFor: [ "cc0", "cc1", "cc2", "cc3", "cc4", "cc5", "cc6", "cc7", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
-         careers: "ALL"
+         careers: {
+             cp0: ["hsc1", "hsc3", "hsc4", "hsc5"],
+             cp1: ["hsc1", "hsc3", "hsc4", "hsc5", "cc3", "cc5"],
+             cp2: ["hsc1", "hsc3", "hsc4", "hsc5", "cc4", "cc6"],
+             cp3: ["hsc1", "hsc3", "hsc4", "cc1", "cc7"],
+             cp4: ["hsc1", "hsc3", "hsc4", "hsc6", "cc2", "cc7"],
+             cp5: ["hsc1", "hsc3", "hsc4", "hsc6"],
+         }
       },
       {
          
@@ -17,7 +24,14 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          preReqs: ["hsc0"],
          preReqFor: [ "cc0", "cc1", "cc2", "cc3", "cc4", "cc5", "cc6", "cc7","hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
-         careers: "ALL"
+         careers: {
+             cp0: ["hsc3", "hsc4", "hsc5"],
+             cp1: ["hsc3", "hsc4", "hsc5", "cc3", "cc5"],
+             cp2: ["hsc3", "hsc4", "hsc5", "cc4", "cc6"],
+             cp3: ["hsc3", "hsc4", "cc1", "cc7"],
+             cp4: ["hsc3", "hsc4", "hsc6", "cc2", "cc7"],
+             cp5: ["hsc3", "hsc4", "hsc6"],
+         }
       },
       {
          id: "hsc2",
@@ -26,7 +40,14 @@ export const data = {
          type: 'highschool',
          preReqs: [],
          preReqFor: [ "cc0", "cc1", "cc2", "cc3", "cc4", "cc5", "cc6", "cc7", "hsc3", "hsc4", "hsc5", "hsc6" ],
-         careers: "ALL"
+         careers: {
+             cp0: ["hsc3", "hsc4", "hsc5"],
+             cp1: ["hsc3", "hsc4", "hsc5", "cc3", "cc5"],
+             cp2: ["hsc3", "hsc4", "hsc5", "cc4", "cc6"],
+             cp3: ["hsc3", "hsc4", "cc1", "cc7"],
+             cp4: ["hsc3", "hsc4", "hsc6", "cc2", "cc7"],
+             cp5: ["hsc3", "hsc4", "hsc6"],
+         }
       },
       {
          id: "hsc3",
@@ -34,7 +55,14 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'highschool',
          preReqs: [ "hsc2", "hsc1" ],
-         careers: "ALL"
+         careers: {
+             cp0: ["hsc4", "hsc5"],
+             cp1: ["hsc4", "hsc5", "cc3", "cc5"],
+             cp2: ["hsc4", "hsc5", "cc4", "cc6"],
+             cp3: ["hsc4", "cc1", "cc7"],
+             cp4: ["hsc4", "hsc6", "cc2", "cc7"],
+             cp5: ["hsc4", "hsc6"],
+         }
       },
       {
          id: "hsc4",
@@ -42,8 +70,14 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'highschool',
          preReqs: ["hsc3"],
-         careers: "ALL"
-
+         careers: {
+             cp0: ["hsc4", "hsc5"],
+             cp1: ["hsc4", "hsc5", "cc3", "cc5"],
+             cp2: ["hsc4", "hsc5", "cc4", "cc6"],
+             cp3: ["hsc4", "cc1", "cc7"],
+             cp4: ["hsc4", "hsc6", "cc2", "cc7"],
+             cp5: ["hsc4", "hsc6"],
+         }
       },
       {
          id: "hsc5",

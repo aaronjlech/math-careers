@@ -11,15 +11,17 @@ p{
     color: #FFF;
 }
 body{
-    background: $MainBlue;
+    background: #FFF;
 
     background-attachment: fixed;
 }
 
 .courses_card{
-    background: $MainGreen;
+    background: $SecGreen;
     border-radius: 4px;
 	h3{
+			color: $Asphalt;
+
 		font-size: 15px;
 	}
 }
@@ -28,13 +30,24 @@ i{
 	position: relative;
 }
 .btn-primary{
-	background: $SecBlue;
-	border: none;
-	color: #333;
+	background: none;
+	border: 1px solid $Clouds;
+	color: $Clouds;
+	-webkit-transition: all ease-in-out .2s;
+	-o-transition: all ease-in-out .2s;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all ease-in-out .2s;
+	&:hover{
+		color: $SecGreen;
+		background: $Clouds;
+		border: 1px solid $Clouds;
+		
+
+	}
 }
 .tool-tip{
     background: none repeat scroll 0 0 #222; /*-- some basic styling */
-	color: #F0B015;
+	color: $Yellow;
 	font-family: 'Helvetica';
 	font-size: 0.7em;
 	font-weight: normal;
