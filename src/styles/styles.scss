@@ -9,7 +9,6 @@ h1, h2, h3, h4, h5{
 }
 p{
     font-family: "Work Sans", serif;
-    color: #FFF;
 }
 body{
     background: #FFF;
@@ -23,7 +22,10 @@ body{
 	background: rgba(000, 000, 000, 0.6);
 	display: block;
 	.modal-content{
+		left: 35%;
+		right: 35%;
 		top: 12em;
+		width:  30%;
 	}
 }
 .courses_card{
@@ -40,20 +42,20 @@ i{
 	position: relative;
 }
 .btn-primary{
-	background: none;
-	border: 1px solid $Clouds;
-	color: $Clouds;
-	-webkit-transition: all ease-in-out .2s;
-	-o-transition: all ease-in-out .2s;
-	-moz-transition: all 0.2s ease-in-out;
-	transition: all ease-in-out .2s;
-	&:hover{
-		color: $SecGreen;
-		background: $Clouds;
-		border: 1px solid $Clouds;
+	// background: none;
+	// border: 1px solid $Clouds;
+	// color: $Clouds;
+	// -webkit-transition: all ease-in-out .2s;
+	// -o-transition: all ease-in-out .2s;
+	// -moz-transition: all 0.2s ease-in-out;
+	// transition: all ease-in-out .2s;
+	// &:hover{
+	// 	color: $SecGreen;
+	// 	background: $Clouds;
+	// 	border: 1px solid $Clouds;
 		
 
-	}
+	// }
 }
 .tool-tip{
     background: none repeat scroll 0 0 #222; /*-- some basic styling */
