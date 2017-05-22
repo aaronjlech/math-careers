@@ -206,7 +206,9 @@ export const data = {
          type: 'career',
          ///coursePaths references all courses that will path to this givin Career.
          coursePaths: ["hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5"],
-         preReq: "hsc5"
+         preReq: "hsc5",
+         image: "../images/stem_non_college.jpeg"
+
 
       },
       {
@@ -215,7 +217,8 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'career',
          coursePaths: [ "cc0", "cc1", "cc3", "cc5", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5" ],
-         preReq: "cc5"
+         preReq: "cc5",
+         image: "../images/stem_career.jpeg"
       },
       {
          id: "cp2",
@@ -223,7 +226,9 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'career',
          coursePaths: [ "cc0", "cc1", "cc4", "cc6", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
-         preReq: "cc6"
+         preReq: "cc6",
+         image: "../images/business_career.jpeg"
+
 
       },
       {
@@ -232,7 +237,9 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'career',
          coursePaths: [ "cc0", "cc1", "cc7", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
-         preReq: "cc7"
+         preReq: "cc7",
+         image: "../images/education_career.jpeg"
+
 
       },
       {
@@ -241,7 +248,9 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'career',
          coursePaths: [ "cc2", "cc7", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc6" ],
-         preReq: "cc7"
+         preReq: "cc7",
+         image: "../images/arts_career.jpeg"
+
       },
       {
          id: "cp5",
@@ -249,7 +258,9 @@ export const data = {
          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
          type: 'career',
          coursePaths: [ "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc6" ],
-         preReq: "hsc6"
+         preReq: "hsc6",
+         image: "../images/non_stem_non_college.jpeg"
+
 
       }
    ]

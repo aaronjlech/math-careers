@@ -31,19 +31,25 @@ export default class CourseSelector extends Component{
    }
 
    render(){
+    
       const { courses } = this.props;
       return(
-         <label htmlFor="course-selector">
-            Pick Your Highest Level of Math!
-            <select
+          <div className="input-group selector_container">
+                      <select
                onChange={this.onChange}
                ref="courseSelector"
-               name="courseSelector" id="course-selector"
+               name="courseSelector" className="course-selector"
                >
-               <option value="ALL">Show All Courses & Careers</option>
                {courses.map( course => <option value={course.id} key={course.id}>{course.name}</option>)}
             </select>
-         </label>
+                                          <span className="input-group-btn">
+                                    <button className="btn selector_button" type="button">
+                                        search
+                                    </button>
+                                </span>
+          </div>
+
+
 
       )
    }

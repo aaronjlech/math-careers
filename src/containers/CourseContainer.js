@@ -13,7 +13,7 @@ export default class CourseContainer extends Component{
       const colleges = courses.filter(course => course.type === "college");
 
         return(
-            <div className="courses container text-center">
+            <div className="courses text-center">
                   <div className="row courses_highschools">
                         <h1>High School Courses</h1>
                         {highSchools.map(course => {

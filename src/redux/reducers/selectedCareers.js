@@ -1,7 +1,7 @@
 import { data } from '../../data';
 
 
-export const selectedCareers = (state = data.careers, action) => {
+export const selectedCareers = function(state = data.careers, action)  {
    switch (action.type) {
       case "UPDATE_SELECTED":
       if(action.courseId === "ALL"){

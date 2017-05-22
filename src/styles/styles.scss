@@ -1,98 +1,97 @@
-//    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500|Work+Sans:300,400,600" rel="stylesheet">
-@import "./_colors.scss";
-@import "./_sideMenu.scss";
-@import "./_careerContainer.scss";
-h1, h2, h3, h4, h5{
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    color: $MainRed;
-}
-p{
-    font-family: "Work Sans", serif;
-}
-body{
-    background: #FFF;
+.jumbotron_cover{
+    background: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    position: relative;
+box-shadow: inset 0px -12px 42px -16px rgba(0,0,0,1);
 
+    .header-text{
+        color: #FFF;
+        text-shadow: 2px 1px 2px rgba(0, 0, 0, .4);
+        // font-weight: bolder;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+        h1{
+            font-family: "Poppins", sans-serif;
+            margin: 0 0 40px 0;
+        }
+    }
+
+}
+.row{
+    margin: 0;
+}
+// .career_container{
+//     margin: 0;
+// }
+.career_card{
+    background: rgba(80, 80, 80, 1);
+    color: #999;
+    padding: 2em;
+    opacity: .4;
+}
+
+.course-selector{
+    -webkit-appearance: none;
+    padding: 10px;
+    border-radius: 0;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    border: none;
+
+    color: #888;
+    &:focus{
+        border: none;
+        outline: none;
+    }
+}
+.input-group{
+    .form-control{
+        -webkit-appearance: none;
+        border: none;
+
+    }
+    .search-btn{
+        background: #fff;
+        &:focus{
+            outline: none;
+            border: none;
+        }
+    }
+    .selector_button{
+        color: #FFF;
+        text-shadow: 2px 1px 2px rgba(0, 0, 0, .4);
+        border: none;
+        background: #444;
+    }
+}
+.selector_container{
+    display: flex;
+    justify-content: center;    
+}
+
+.jumbotron{
+    background: url("../images/ruler_bg.jpg")center center no-repeat;
+    background-size: cover;
+    background-position-y: -25px;
+    width: 100%;
+    height: 40vh;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
     background-attachment: fixed;
-}
-#app-container{
-	position: relative;
-}
-.modal{
-	background: rgba(000, 000, 000, 0.6);
-	display: block;
-	.modal-content{
-		left: 35%;
-		right: 35%;
-		top: 12em;
-		width:  30%;
-	}
-}
-.courses_card{
-    background: $SecGreen;
-    border-radius: 4px;
-	h3{
-			color: $Asphalt;
 
-		font-size: 15px;
-	}
 }
-i{
-	color: #FFF;
-	position: relative;
+.menu{
+    width: 100%;
+    margin: 0;
+    padding: 3em;
+background: #ffffff; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+background: -webkit-linear-gradient(#ffffff 0%, #37cebc 0%, #2cb9d6 100%);
+background: -moz-linear-gradient(#ffffff 0%, #37cebc 0%, #2cb9d6 100%);
+background: -o-linear-gradient(#ffffff 0%, #37cebc 0%, #2cb9d6 100%);
+background: linear-gradient(#ffffff 0%, #37cebc 0%, #2cb9d6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-.btn-primary{
-	// background: none;
-	// border: 1px solid $Clouds;
-	// color: $Clouds;
-	// -webkit-transition: all ease-in-out .2s;
-	// -o-transition: all ease-in-out .2s;
-	// -moz-transition: all 0.2s ease-in-out;
-	// transition: all ease-in-out .2s;
-	// &:hover{
-	// 	color: $SecGreen;
-	// 	background: $Clouds;
-	// 	border: 1px solid $Clouds;
-		
-
-	// }
-}
-.tool-tip{
-    background: none repeat scroll 0 0 #222; /*-- some basic styling */
-	color: $Yellow;
-	font-family: 'Helvetica';
-	font-size: 0.7em;
-	font-weight: normal;
-	line-height: 1.5em;
-	padding: 16px 15px;
-	width: 170px;
-    top: -8em;
-    left: -6.8em;
-	margin-left: 0;	
-	/*-- set opacity to 0 otherwise our animations won't work */
-	opacity: .8;
-	filter: alpha(opacity=0);  	
-	position: absolute;
-	text-align: center;	
-	z-index: 2;
-	text-transform: none;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease-in-out;
- :after {
-	border-color: #222 rgba(0, 0, 0, 0);
-	border-style: solid;
-	border-width: 15px 15px 0;
-	bottom: -15px;
-	content: "";
-	display: block;
-    left: 67px;	
-	position: absolute;
-	width: 0;
-}
-}
-
-
-
-
