@@ -27,13 +27,17 @@ box-shadow: inset 0px -12px 42px -16px rgba(0,0,0,1);
 //     margin: 0;
 // }
 .career_card{
-    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    color: #777;
     padding: 0;
-    opacity: .8;
+    opacity: .3;
+    transition: all ease-in .3s;
     p{
-        color: #777;
         margin-bottom: 2px; 
     }
+    .selected-course{
+    color: #37cebc;
+}
     .opacity_card{
         padding: 30px 20px;
         background: rgba(0, 0, 0, .8);
@@ -41,6 +45,7 @@ box-shadow: inset 0px -12px 42px -16px rgba(0,0,0,1);
         height: 100%;
     }
 }
+
 
 .course-selector{
     -webkit-appearance: none;
@@ -103,4 +108,11 @@ background: -webkit-linear-gradient(#ffffff 0%, #37cebc 0%, #2cb9d6 100%);
 background: -moz-linear-gradient(#ffffff 0%, #37cebc 0%, #2cb9d6 100%);
 background: -o-linear-gradient(#ffffff 0%, #37cebc 0%, #2cb9d6 100%);
 background: linear-gradient(#ffffff 0%, #37cebc 0%, #2cb9d6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.selected-career{
+    opacity: 1;
+    color: #fff;
+    .opacity_card{
+        background: rgba(0, 0, 0, .5);
+    }
 }

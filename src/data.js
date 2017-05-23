@@ -8,6 +8,7 @@ export const data = {
          preReqs: [],
          preReqFor: [ "cc0", "cc1", "cc2", "cc3", "cc4", "cc5", "cc6", "cc7", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
          careers: {
+
              cp0: ["hsc1", "hsc3", "hsc4", "hsc5"],
              cp1: ["hsc1", "hsc3", "hsc4", "hsc5", "cc3", "cc5"],
              cp2: ["hsc1", "hsc3", "hsc4", "hsc5", "cc4", "cc6"],
@@ -207,7 +208,7 @@ export const data = {
          ///coursePaths references all courses that will path to this givin Career.
          coursePaths: ["hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5"],
          preReq: "hsc5",
-         image: "../images/stem_non_college.jpeg"
+         image: "./public/images/stem_non_college.jpeg"
 
 
       },
@@ -218,7 +219,7 @@ export const data = {
          type: 'career',
          coursePaths: [ "cc0", "cc1", "cc3", "cc5", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5" ],
          preReq: "cc5",
-         image: "../images/stem_career.jpeg"
+         image: "./public/images/stem_career.jpeg"
       },
       {
          id: "cp2",
@@ -227,7 +228,7 @@ export const data = {
          type: 'career',
          coursePaths: [ "cc0", "cc1", "cc4", "cc6", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
          preReq: "cc6",
-         image: "../images/business_career.jpeg"
+         image: "./public/images/business_career.jpeg"
 
 
       },
@@ -238,7 +239,7 @@ export const data = {
          type: 'career',
          coursePaths: [ "cc0", "cc1", "cc7", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc5", "hsc6" ],
          preReq: "cc7",
-         image: "../images/education_career.jpeg"
+         image: "./public/images/education_career.jpeg"
 
 
       },
@@ -249,7 +250,7 @@ export const data = {
          type: 'career',
          coursePaths: [ "cc2", "cc7", "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc6" ],
          preReq: "cc7",
-         image: "../images/arts_career.jpeg"
+         image: "./public/images/arts_career.jpeg"
 
       },
       {
@@ -259,7 +260,7 @@ export const data = {
          type: 'career',
          coursePaths: [ "hsc0", "hsc1", "hsc2", "hsc3", "hsc4", "hsc6" ],
          preReq: "hsc6",
-         image: "../images/non_stem_non_college.jpeg"
+         image: "./public/images/non_stem_non_college.jpeg"
 
 
       }

@@ -24,9 +24,16 @@ export default class CareerContainer extends Component{
                 <div className="careers row text-center">
                     <h1>Available Careers</h1>
                     {selectedCareers.map(career =>{
+                        let isPath
+                        if(selectedCourse.careers[career.id]){
+                            isPath = "selected-career"
+                        }else{
+                            isPath = ""
+                        }
                         return( <CareerCard
                                 key={career.id}
                                 career={career}
+                                isPath={isPath}
                                 {...this.props}
                             />
                         )

@@ -14,6 +14,7 @@ export default class Main extends Component {
         const highSchools = courses.filter(course => course.type === "highschool");
         const colleges = courses.filter(course => course.type === "college");
         const courseLength = selectedCourse.length > 1;
+        console.log(selectedCourse)
         return (
             <div id="app-container container">
                 <div className="jumbotron">
@@ -39,10 +40,20 @@ export default class Main extends Component {
                 <div className="career_container fluid-container">
                     <div className="row">
                         {careers.map( career =>{
+                            let isPath = "";
+                            if(selectedCourse.careers !== undefined){
+                                if(selectedCourse.careers[career.id]){
+                                    console.log(selectedCourse.careers[career.id], 'ahhhttt')
+                                    isPath = "selected-career";
+                                }else {
+                                    isPath = "";
+                                }
+                            }
                             return <CareerCard
                                     {...this.props}
                                     career={career}
                                     key={career.id}
+                                    isPath={isPath}
                                     />
                         })}
                     </div>

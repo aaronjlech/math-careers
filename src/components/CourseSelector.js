@@ -36,12 +36,15 @@ export default class CourseSelector extends Component{
       return(
           <div className="input-group selector_container">
                       <select
-               onChange={this.onChange}
-               ref="courseSelector"
-               name="courseSelector" className="course-selector"
-               >
-               {courses.map( course => <option value={course.id} key={course.id}>{course.name}</option>)}
-            </select>
+                        onChange={this.onChange}
+                        ref="courseSelector"
+                        name="courseSelector" className="course-selector"
+                      >
+                        <option value="">Select Your Highest Math Course</option>
+
+                        {courses.map( course => <option value={course.id} key={course.id}>{course.name}</option>)}
+                        <option value="ALL">Show All</option>
+                    </select>
                                           <span className="input-group-btn">
                                     <button className="btn selector_button" type="button">
                                         search
